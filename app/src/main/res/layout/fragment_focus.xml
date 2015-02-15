@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/noNotfications"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/nnT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="No notifications"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+    
+	<ScrollView 
+	    android:id="@+id/focusSV"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true" >
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical" >
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+	
+	            <ImageView
+	                android:id="@+id/appIco"
+	                android:layout_width="45dp"
+	                android:layout_height="45dp"
+	                android:layout_marginBottom="5dp"
+	                android:layout_marginLeft="15dp"
+	                android:layout_marginRight="15dp"
+	                android:layout_marginTop="5dp"
+	                android:src="@drawable/ic_launcher" />
+	
+	            <TextView
+	                android:id="@+id/appName"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_marginRight="15dp"
+	                android:ellipsize="end"
+	                android:gravity="center_vertical"
+	                android:singleLine="true"
+	                android:text="Application Name"
+	                android:textColor="@android:color/white"
+	                android:textSize="22sp" />
+	
+	        </LinearLayout>
+	
+	        <TextView
+	            android:id="@+id/appMsgLine1"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="15dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="5dp"
+	            android:gravity="left"
+	            android:singleLine="false"
+	            android:text="Application Message 1"
+	            android:textColor="@android:color/white"
+	            android:textSize="20sp" />
+	
+	        <TextView
+	            android:id="@+id/appMsgLine2"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="15dp"
+	            android:layout_marginRight="15dp"
+	            android:layout_marginTop="5dp"
+	            android:gravity="left"
+	            android:singleLine="false"
+	            android:text="Application Message 2"
+	            android:textColor="@android:color/white"
+	            android:textSize="18sp" />
+	
+	        <LinearLayout
+	            android:id="@+id/actionContainer"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="10dp"
+	            android:orientation="vertical" >
+	
+	        </LinearLayout>
+	
+	    </LinearLayout>
+	</ScrollView>
+	
+</RelativeLayout> 

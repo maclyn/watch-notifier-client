@@ -1,0 +1,38 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btSetupScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BluetoothSetup" >
+
+    <LinearLayout
+        android:id="@+id/btLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/setDiscoverable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable Bluetooth" />
+        
+        <Button
+            android:id="@+id/openForDiscovery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Setup Bluetooth" />
+
+        <Button
+            android:id="@+id/startService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start connection service" />
+        
+        <Button
+            android:id="@+id/setWallpaper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set wallpaper" />
+    </LinearLayout>
+</ScrollView>
